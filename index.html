@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Student Success Hub</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="bg-animation"></div>
+
+<nav class="navbar glass">
+<h2>🚀 AI Student Success Hub</h2>
+
+<div>
+<a href="#career">Career Coach</a>
+<a href="#projects">Projects</a>
+<a href="#resume">Resume</a>
+<a href="#creator">Creator</a>
+</div>
+</nav>
+
+<section class="hero">
+
+<h1>AI Student Success Hub</h1>
+
+<p>
+Transform your academic journey into a successful career using AI-powered guidance.
+</p>
+
+<div class="hero-btns">
+<button>Start Journey</button>
+<button class="secondary">Explore Features</button>
+</div>
+
+<div class="stats">
+
+<div class="card glass">
+<h2 id="students">0</h2>
+<p>Students Guided</p>
+</div>
+
+<div class="card glass">
+<h2 id="projectsCount">0</h2>
+<p>Projects Generated</p>
+</div>
+
+<div class="card glass">
+<h2 id="analysis">0</h2>
+<p>Career Analyses</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="career" class="glass section">
+
+<h2>AI Career Coach</h2>
+
+<div class="grid">
+
+<input id="name" placeholder="Student Name">
+<input id="branch" placeholder="Branch">
+<input id="semester" placeholder="Semester">
+<input id="skills" placeholder="Skills">
+<input id="interest" placeholder="Interests">
+<input id="goal" placeholder="Career Goal">
+
+</div>
+
+<button onclick="careerAnalysis()">
+Analyze My Career
+</button>
+
+<div id="careerResult"></div>
+
+</section>
+
+<section class="glass section">
+
+<h2>Career DNA Analysis</h2>
+
+<canvas id="careerChart"></canvas>
+
+</section>
+
+<section class="glass section">
+
+<h2>AI Semester Roadmap</h2>
+
+<input id="targetCareer" placeholder="Target Career">
+
+<button onclick="generateRoadmap()">
+Generate Roadmap
+</button>
+
+<div id="roadmap"></div>
+
+</section>
+
+<section id="projects" class="glass section">
+
+<h2>AI Project Generator</h2>
+
+<input id="branchInput" placeholder="Branch">
+<input id="levelInput" placeholder="Skill Level">
+<input id="techInput" placeholder="Technology Interest">
+
+<button onclick="generateProjects()">
+Generate Ideas
+</button>
+
+<div id="projectCards"></div>
+
+</section>
+
+<section id="resume" class="glass section">
+
+<h2>AI Resume Analyzer</h2>
+
+<input type="file">
+
+<button onclick="analyzeResume()">
+Analyze Resume
+</button>
+
+<div id="resumeResult"></div>
+
+</section>
+
+<section class="glass section">
+
+<h2>AI Interview Simulator</h2>
+
+<select id="interviewType">
+<option>Technical</option>
+<option>HR</option>
+<option>Internship</option>
+</select>
+
+<button onclick="generateInterview()">
+Generate Questions
+</button>
+
+<div id="questions"></div>
+
+</section>
+
+<section class="glass section">
+
+<h2>Career Readiness Dashboard</h2>
+
+<canvas id="readinessChart"></canvas>
+
+</section>
+
+<section class="glass section">
+
+<h2>Market Insights</h2>
+
+<input id="careerMarket" placeholder="Desired Career">
+
+<button onclick="marketInsights()">
+Analyze Market
+</button>
+
+<div id="marketResult"></div>
+
+</section>
+
+<section class="glass section">
+
+<h2>AI Chat Assistant</h2>
+
+<div class="chat-box" id="chatBox"></div>
+
+<input id="chatInput" placeholder="Ask Career Question">
+
+<button onclick="sendMessage()">
+Send
+</button>
+
+</section>
+
+<section class="glass section">
+
+<h2>Achievements</h2>
+
+<div class="badges">
+<div class="badge">🏆 Career Explorer</div>
+<div class="badge">🏆 Skill Builder</div>
+<div class="badge">🏆 Resume Ready</div>
+<div class="badge">🏆 Interview Master</div>
+<div class="badge">🏆 Project Champion</div>
+</div>
+
+</section>
+
+<section id="creator" class="glass section">
+
+<h2>About Creator</h2>
+
+<h3>Kavya Mehta</h3>
+
+<p>ICT Department</p>
+<p>Government Polytechnic For Girls, Ahmedabad</p>
+
+<p>
+Traveling • Editing • Coding • Foodie • Team Management
+</p>
+
+<a href="https://www.linkedin.com/in/kavya-mehta-816a91374" target="_blank">
+LinkedIn
+</a>
+
+<br><br>
+
+<a href="https://github.com/kavya123-sys" target="_blank">
+GitHub
+</a>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 AI Student Success Hub | Created by Kavya Mehta
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
